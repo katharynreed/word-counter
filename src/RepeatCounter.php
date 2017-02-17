@@ -12,7 +12,10 @@
             else {
                 return "You have not entered a sentance.";
             }
+        }
 
+        function count_return() {
+            
         }
     }
 

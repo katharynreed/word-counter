@@ -5,15 +5,16 @@
         <title>Your redundancies have been checked...</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Barrio|Montserrat" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <h4>Your redundancies have been checked...</h4>
             <h1> {{ results }} </h1>
 
-            <form class="" action="/" method="post">
+            <form action="/" method="get">
                 <div class="redirect">
-                    <button type="submit" name="button">Run another test.</button>
+                    <button class="btn" type="submit" name="button">Run another test.</button>
                 </div>
             </form>
         </div>

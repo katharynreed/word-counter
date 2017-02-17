@@ -1,5 +1,31 @@
+h1 {
+    color: #E07A5F;
+}
+
+h3 {
+    color: #81B29A;
+}
+
+h4 {
+    color: #3C6E71;
+}
+
+h5 {
+    color: #3C6E71;
+}
+
 body {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(school.png);
+}
+
+.container {
+    width: 60%;
+}
+
+.btn {
+    background-color: #A6D3A0;
 }
 
 .redirect {
@@ -7,9 +33,14 @@ body {
 }
 
 .inputbox {
-    width: 80%;
+    width: 100%;
 }
 
 .input-pos {
-    padding-left: 15%;
+    padding-top: 5%;
+}
+
+#title {
+    font-family: 'Barrio', cursive;
+    font-size: 60px;
 }

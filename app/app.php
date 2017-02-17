@@ -25,5 +25,6 @@
         return $app['twig']->render('results.html.twig', array('results' => $results));
     });
 
+
     return $app;
 ?>

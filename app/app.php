@@ -19,9 +19,8 @@
         $newRepeatCounter = new RepeatCounter;
         $string = ($_POST['string']);
         $word = ($_POST['word']);
-        
+
         $results = $newRepeatCounter->count_repeats($string, $word);
-        var_dump($newRepeatCounter);
 
         return $app['twig']->render('results.html.twig', array('results' => $results));
     });

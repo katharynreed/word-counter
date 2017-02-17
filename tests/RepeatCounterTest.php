@@ -27,7 +27,7 @@
             $test_RepeatCounter = new RepeatCounter;
 
             $result = $test_RepeatCounter->count_repeats($input1, $input2);
-            $this->assertEquals($result, 2);
+            $this->assertEquals($result, "2 instances of TEST");
         }
     }
 

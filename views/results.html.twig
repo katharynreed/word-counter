@@ -7,7 +7,15 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <h4>Your redundancies have been checked...</h4>
-                <h1> {{ results }} </h1>
+        <div class="container">
+            <h4>Your redundancies have been checked...</h4>
+            <h1> {{ results }} </h1>
+
+            <form class="" action="/" method="post">
+                <div class="redirect">
+                    <button type="submit" name="button">Run another test.</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

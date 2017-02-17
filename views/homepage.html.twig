@@ -3,15 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Word Counter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
         <h1>Redundancy Check</h1>
-        <h3>Have someone you want to impress? Want to seem smarter than you are? If you think you might be overusing a word, enter the phrase below and the word you'd like to check for. We'll let you know if you should invest in a thesaurus...</h3>
+        <h3>Have someone you want to impress? Want to seem smarter than you are?</h3>
+
+        <h4>If you think you might be overusing a word, enter the phrase below and the word you'd like to check for. We'll let you know if you should invest in a thesaurus...</h4>
 
         <form id="count-init" action="/count" method="post">
-            <input type="text" name="string" placeholder="Enter your text...">
-            <input type="text" name="word" value="Enter the word you want to check for...">
-            <button type="submit" name="button">Run Check</button>
+            <div class="form-group">
+                <label for="exampleTextarea">Example textarea</label>
+                <textarea class="form-control" name="string"  id="textarea" rows="3" placeholder="Enter your text here..."></textarea>
+            </div>
+            <input class="form-control" type="text" name="word" placeholder="Enter your word...">
+            <button class="btn" type="submit" name="button">Run Check</button>
         </form>
     </body>
 </html>

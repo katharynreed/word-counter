@@ -18,10 +18,19 @@
             $string_to_array = explode(" ", $string);
             foreach ($string_to_array as $input) {
                 if ($word == $input) {
-                    $count_return ++;
+                    $this->count_return ++;
                 }
             }
-            return $count_return;
+            return $this->count_return;
+        }
+
+        function get($property)
+        {
+            if (property_exists($this, $property)) {
+                return $this->$property;
+            } else {
+                return "That property does not exist.";
+            }
         }
     }
 

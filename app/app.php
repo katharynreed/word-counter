@@ -19,11 +19,11 @@
         $newRepeatCounter = new RepeatCounter;
         $string = ($_POST['string']);
         $word = ($_POST['word']);
+        
+        $results = $newRepeatCounter->count_repeats($string, $word);
+        var_dump($newRepeatCounter);
 
-        $result = $newRepeatCounter->string_check($string);
-        $result = $newRepeatCounter->count_repeats($string, $word);
-
-        return $app['twig']->render('results.html.twig', array('result' => $result));
+        return $app['twig']->render('results.html.twig', array('results' => $results));
     });
 
     return $app;

@@ -14,8 +14,10 @@
             }
         }
 
-        function count_return() {
-            
+        function count_repeats($input1, $input2) {
+            $count_return = substr_count(strtolower($input1), strtolower($input2));
+            return $count_return;
+
         }
     }
 

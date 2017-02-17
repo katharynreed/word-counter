@@ -21,12 +21,12 @@
             $this->assertEquals($result, "You have not entered a sentance.");
         }
 
-        function test_count_return() {
+        function test_count_repeats() {
             $input1 = "This test within a test file.";
             $input2 = "test";
             $test_RepeatCounter = new RepeatCounter;
 
-            $result = $test_RepeatCounter->count_return($input1, $input2);
+            $result = $test_RepeatCounter->count_repeats($input1, $input2);
             $this->assertEquals($result, 2);
         }
     }

@@ -13,9 +13,7 @@ This program built to practice basic PhP, PhPUnit testing, and twig. The web pag
 Behavior | Input | Output
 ------------ | ------------- | -------------
 The user can input a block of text (string) and a word (word) they would like to search for. If the user does not input a string or the word, they will be returned an error message. Test included in 'tests' folder. | ' ', ' ' | 'You have not entered a sentence.'
-
 The user can input a block of text (string) and a word (word) they would like to search for. If the user inputs both a string and a word, but there are no matches it will return a 0 value. | 'This is a test.', 'cat' | 0 instances of CAT
-
 The user can input a block of text (string) and a word (word) they would like to search for. If the user inputs both a string and a word, they will be returned with the number of exact matches. | 'This is a test within one test inside another test.', 'test' | 3 instances of TEST
 
 

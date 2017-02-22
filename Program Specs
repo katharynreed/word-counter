@@ -1,5 +1,15 @@
 Specifications:
 
-* Behavior: If the user does not input a string, they will be returned an error message. Test included in 'tests' folder. Input: ' ' Output: 'You have not entered a sentence.'
+* Behavior: If the user enters a string and it matches inputted word, it will return as match. Input: 'test', 'test' Output: 1 match
+
+* Behavior : If the user enters a string and it does not match inputted word, it will not return as a match. Input: 'test', 'cat' Output: 0 matches
+
+* Behavior : Any string or word inputted will be put into lowercase letters for convenience. Input: 'TeSt' Output: 'test'
+
+* Behavior : Any string will have punctuation removed after input. Input: 'This! Is! A! Test!' Output: 'this is a test'
+
+* Behavior: If the user does not input a STRING, they will be returned an error message. Test included in 'tests' folder. Input: ' ' Output: 'You have not entered a sentence.'
+
+* Behavior: If the user does not input a WORD, they will be returned an error message. Test included in 'tests' folder. Input: ' ' Output: 'You have not entered a sentence.'
 
 * Behavior: Program takes one word and finds all matches inside previously entered string, the program then counts and returns those instances. The system will only check for full word instances. Test included in 'tests' folder. Input: 'This is a test', 'this' Output: 1

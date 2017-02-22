@@ -11,6 +11,7 @@
             $string = strtolower($string);
             $string = str_replace($punctuation, "", $string);
             $word = strtolower($word);
+            $word = str_replace($punctuation, "", $word);
             $string_to_array = explode(" ", $string);
             foreach ($string_to_array as $input) {
                 if ($word == $input) {

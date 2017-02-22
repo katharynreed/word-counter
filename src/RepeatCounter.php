@@ -6,7 +6,10 @@
         public $count_return = 0;
 
         function count_repeats($string, $word) {
+            $punctuation = [".", ",", ";", ":", "(", ")", "[", "]", "{", "}", "!", "?", "/", "'s", "\"", "'", "$"];
+            $special_characters = str_split($special_characters);
             $string = strtolower($string);
+            $string = str_replace($punctuation, "", $string);
             $word = strtolower($word);
             $string_to_array = explode(" ", $string);
             foreach ($string_to_array as $input) {

@@ -49,4 +49,4 @@ This program was created with intermediate HTML, CSS, and Bootstrap; as well as 
 
 This program features MIT licensing.
 
-*Copyright (C) 2017 Katharyn Reed*
+*Copyright (C) 2017 Katharyn Reed* 
